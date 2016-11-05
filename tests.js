@@ -64,21 +64,21 @@ function results(){
   var total;
   if(check1 == 1){
     document.getElementById("q1").innerHTML = '<p style:"color: green">Correct</p>';
-    total += 1;
+    total = total + 1;
   }
   else{
     document.getElementById("q1").innerHTML = '<p style:"color: red">Incorrect</p>';
   }
   if(check2 == 1){
     document.getElementById("q2").innerHTML = '<p style:"color: green">Correct</p>';
-    total += 1;
+    total = total + 1;
   }
   else{
     document.getElementById("q2").innerHTML = '<p style:"color: red">Incorrect</p>';
   }
   if(check3 == 1){
     document.getElementById("q3").innerHTML = '<p style:"color: green">Correct</p>';
-    total += 1;
+    total = total + 1;
   }
   else{
     document.getElementById("q3").innerHTML = '<p style:"color: red">Incorrect</p>';
