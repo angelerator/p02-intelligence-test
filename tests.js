@@ -62,19 +62,19 @@ function results(){
   var check2 = getCookie("a2");
   var check3 = getCookie("a3");
   var total = check1 + check2 + check3;
-  if(check1){
+  if(check1 == 1){
     document.getElementById("q1").innerHTML = '<p style:"color: green">Correct</p>';
   }
   else{
     document.getElementById("q1").innerHTML = '<p style:"color: red">Incorrect</p>';
   }
-  if(check2){
+  if(check2 == 1){
     document.getElementById("q2").innerHTML = '<p style:"color: green">Correct</p>';
   }
   else{
     document.getElementById("q2").innerHTML = '<p style:"color: red">Incorrect</p>';
   }
-  if(check3){
+  if(check3 == 1){
     document.getElementById("q3").innerHTML = '<p style:"color: green">Correct</p>';
   }
   else{
