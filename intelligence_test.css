@@ -1,16 +1,25 @@
-/*made by Darin Croft*/
+/* Made by Darin Croft */
+body{
+  background-color: #CCCCFF
+}
 div.mid{
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;
-  width: 33%;
+  width: 15%;
+  border-style: double;
+  border-width: 10px;
+  border-color: #F0F0F0;
 }
 div.top{
+  font-family: Tahoma, Geneva, sans-serif;
   border-style: groove;
   border-width: 10px;
   border-color: #F0F0F0;
   width: 100%;
+  background-color: #DDDDEE;
 }
 div.question{
+  font-family: Georgia, serif;
   font-size: 20px;
 }
 h{

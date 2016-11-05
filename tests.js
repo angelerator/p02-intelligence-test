@@ -1,9 +1,51 @@
-//made by Darin Croft
+// Made by Darin Croft
+function start(){
+  //sets cookies so results will be incorrect if you skip everythng
+    setCookie(a1, "0");
+    setCookie(a2, "0");
+    setCookie(a3, "0");
+}
 function question1(){
-  window.alert("alart");
+  var answer;
+  answer = document.getElementById("input").value;
+  answer.toLowerCase();
+  if(){
+    document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
+    setCookie(a1, "1");
+  }
+  else {
+    document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
+    setCookie(a1, "0");
+  }
 }
 
+function question2(){
+  var answer;
+  answer = document.getElementById("input").value;
+  answer.toLowerCase();
+  if(answer == ""){
+    document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
+    setCookie(a2, "1");
+  }
+  else {
+    document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
+    setCookie(a2, "0");
+  }
+}
 
+function question3(){
+  var answer;
+  answer = document.getElementById("input").value;
+  answer.toLowerCase();
+  if(answer == ""){
+    document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
+    setCookie(a3, "1");
+  }
+  else {
+    document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
+    setCookie(a3, "0");
+  }
+}
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
