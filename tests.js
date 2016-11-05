@@ -63,22 +63,22 @@ function results(){
   var check3 = getCookie("a3");
   var total = check1 + check2 + check3;
   if(check1){
-    document.getElementById("q1").innerHTML = '<span style:"color: green">Correct</span>';
+    document.getElementById("q1").innerHTML = '<p style:"color: green">Correct</p>';
   }
   else{
-    document.getElementById("q1").innerHTML = '<span style:"color: red">Incorrect</span>';
+    document.getElementById("q1").innerHTML = '<p style:"color: red">Incorrect</p>';
   }
   if(check2){
-    document.getElementById("q2").innerHTML = '<span style:"color: green">Correct</span>';
+    document.getElementById("q2").innerHTML = '<p style:"color: green">Correct</p>';
   }
   else{
-    document.getElementById("q2").innerHTML = '<span style:"color: red">Incorrect</span>';
+    document.getElementById("q2").innerHTML = '<p style:"color: red">Incorrect</p>';
   }
   if(check3){
-    document.getElementById("q3").innerHTML = '<span style:"color: green">Correct</span>';
+    document.getElementById("q3").innerHTML = '<p style:"color: green">Correct</p>';
   }
   else{
-    document.getElementById("q3").innerHTML = '<span style:"color: red">Incorrect</span>';
+    document.getElementById("q3").innerHTML = '<p style:"color: red">Incorrect</p>';
   }
 }
 
