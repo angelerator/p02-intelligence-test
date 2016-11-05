@@ -84,7 +84,8 @@ function results(){
     document.getElementById("q3").innerHTML = '<p style:"color: red">Question 3:<br>Incorrect</p>';
   }
   total = (total/3)*100;
-  document.getElementById("final").innerHTML = total.toFixed(2) + "% correct";
+  var tmp = total.toFixed(2) + "% correct";
+  document.getElementById("final").innerHTML = tmp;
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
