@@ -58,7 +58,27 @@ function question3(){
 }
 
 function results(){
-  
+  var check1 = getCookie("a1");
+  var check2 = getCookie("a2");
+  var check3 = getCookie("a3");
+  if(check1){
+    document.getElementById("q1").innerHTML = '<span style:"color: green">Correct</span>';
+  }
+  else{
+    document.getElementById("q1").innerHTML = '<span style:"color: red">Incorrect</span>';
+  }
+  if(check2){
+    document.getElementById("q2").innerHTML = '<span style:"color: green">Correct</span>';
+  }
+  else{
+    document.getElementById("q2").innerHTML = '<span style:"color: red">Incorrect</span>';
+  }
+  if(check3){
+    document.getElementById("q3").innerHTML = '<span style:"color: green">Correct</span>';
+  }
+  else{
+    document.getElementById("q3").innerHTML = '<span style:"color: red">Incorrect</span>';
+  }
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp

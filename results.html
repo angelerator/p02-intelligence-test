@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Intelligence Test</title>
+    <title onload="results()">Intelligence Test</title>
     <script type="text/javascript" src="tests.js"></script>
     <link rel="stylesheet" href="intelligence_test.css"/>
   </head>
@@ -13,24 +13,17 @@
         Intelligence Test Results
       </h>
       <div class="mid">
-        <p>Question one: 
-        </p>
+        <p id="q1"></p>
       </div>
       <div class="mid">
-        <p>
-        </p>
+        <p id="q2"></p>
       </div>
       <div class="mid">
-        <p>
-        </p>
+        <p id="q3"></p>
       </div>
     </div>
-    <div class="question">
-      <br>Your turn! Please type in your answer and hit enter.<br><br>
-      <input type="text" id="input" onchange="question1()"><br>
-      <p id="feedback"></p>
-    </div>
+    <br><br>
     <div class="question" style="float: right; width: 30%;">
-      <a href="question2.html">Next question!</a>
+      <a href="index.html">Click here if you wish to redo the test</a>
     </div>
   </body>
