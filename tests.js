@@ -63,25 +63,25 @@ function results(){
   var check3 = getCookie("a3");
   var total;
   if(check1 == 1){
-    document.getElementById("q1").innerHTML = '<p style:"color: green">Correct</p>';
+    document.getElementById("q1").innerHTML = '<p style:"color: green">Question 1:<br>Correct</p>';
     total = total + 1;
   }
   else{
-    document.getElementById("q1").innerHTML = '<p style:"color: red">Incorrect</p>';
+    document.getElementById("q1").innerHTML = '<p style:"color: red">Question 1:<br>Incorrect</p>';
   }
   if(check2 == 1){
-    document.getElementById("q2").innerHTML = '<p style:"color: green">Correct</p>';
+    document.getElementById("q2").innerHTML = '<p style:"color: green">Question 2:<br>Correct</p>';
     total = total + 1;
   }
   else{
-    document.getElementById("q2").innerHTML = '<p style:"color: red">Incorrect</p>';
+    document.getElementById("q2").innerHTML = '<p style:"color: red">Question 2:<br>Incorrect</p>';
   }
   if(check3 == 1){
-    document.getElementById("q3").innerHTML = '<p style:"color: green">Correct</p>';
+    document.getElementById("q3").innerHTML = '<p style:"color: green">Question 3:<br>Correct</p>';
     total = total + 1;
   }
   else{
-    document.getElementById("q3").innerHTML = '<p style:"color: red">Incorrect</p>';
+    document.getElementById("q3").innerHTML = '<p style:"color: red">Question 3:<br>Incorrect</p>';
   }
   total = (total/3)*100;
   document.getElementById("final").innerHTML = total.toFixed(2) + "% correct";
