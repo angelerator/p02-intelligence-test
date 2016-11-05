@@ -80,6 +80,7 @@ function results(){
   else{
     document.getElementById("q3").innerHTML = '<p style:"color: red">Incorrect</p>';
   }
+  document.getElementById("final").innerHTML = (total/3)*100 + "% correct";
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
