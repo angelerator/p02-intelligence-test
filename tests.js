@@ -6,31 +6,41 @@ function start(){
     setCookie(a3, "0");
 }
 function question1(){
-  var answer;
-  answer = document.getElementById("input").value;
-  answer.toLowerCase();
-  if(){
-    document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
-    setCookie(a1, "1");
-  }
-  else {
-    document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
-    setCookie(a1, "0");
-  }
+  var answer = document.getElementById("input").value;
+  //var tmp = typeof answer;
+  //if(typeof(answer) == 'string'){
+    answer = answer.toLowerCase();
+    if(answer == "x"){
+      document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
+      setCookie("a1", "1");
+    }
+    else {
+      document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
+      setCookie("a1", "0");
+    }
+//  }
+  //else{
+  //  document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. The answer should be a letter!</span>';
+//  }
 }
 
 function question2(){
   var answer;
   answer = document.getElementById("input").value;
-  answer.toLowerCase();
-  if(answer == ""){
-    document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
-    setCookie(a2, "1");
-  }
-  else {
-    document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
-    setCookie(a2, "0");
-  }
+  //var tmp = typeof answer;
+  //if(tmp == "number"){
+    if(answer == "123"){
+      document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
+      setCookie("a2", "1");
+    }
+    else {
+      document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
+      setCookie("a2", "0");
+    }
+//  }
+  //else{
+//    document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. The answer should be a number!</span>';
+//  }
 }
 
 function question3(){
@@ -39,11 +49,11 @@ function question3(){
   answer.toLowerCase();
   if(answer == ""){
     document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
-    setCookie(a3, "1");
+    setCookie("a3", "1");
   }
   else {
     document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
-    setCookie(a3, "0");
+    setCookie("a3", "0");
   }
 }
 
