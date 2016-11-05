@@ -46,8 +46,8 @@ function question2(){
 function question3(){
   var answer;
   answer = document.getElementById("input").value;
-  answer.toLowerCase();
-  if(answer == ""){
+  answer = answer.toLowerCase();
+  if(answer == "gi"){
     document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
     setCookie("a3", "1");
   }
@@ -55,6 +55,10 @@ function question3(){
     document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
     setCookie("a3", "0");
   }
+}
+
+function results(){
+  
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
