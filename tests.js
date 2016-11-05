@@ -1,4 +1,7 @@
-
+//made by Darin Croft
+function question1(){
+  window.alert("alart");
+}
 
 
 

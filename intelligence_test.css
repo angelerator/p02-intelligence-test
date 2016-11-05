@@ -1,0 +1,26 @@
+/*made by Darin Croft*/
+div.mid{
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  width: 33%;
+}
+div.top{
+  border-style: groove;
+  border-width: 10px;
+  border-color: #F0F0F0;
+  width: 100%;
+}
+div.question{
+  font-size: 20px;
+}
+h{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 40px;
+  color: #800000;
+}
+p{
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #880000;
+  font-size: 20px;
+  margin-right: 50px;
+}
