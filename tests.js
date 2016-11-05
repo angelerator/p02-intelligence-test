@@ -1,9 +1,9 @@
 // Made by Darin Croft
 function start(){
   //sets cookies so results will be incorrect if you skip everythng
-    setCookie("a1", "0", 1);
-    setCookie("a2", "0", 1);
-    setCookie("a3", "0", 1);
+    setCookie("a1", "0");
+    setCookie("a2", "0");
+    setCookie("a3", "0");
 }
 function question1(){
   var answer = document.getElementById("input").value;
@@ -12,11 +12,11 @@ function question1(){
     answer = answer.toLowerCase();
     if(answer == "x"){
       document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
-      setCookie("a1", "1", 1);
+      setCookie("a1", "1");
     }
     else {
       document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
-      setCookie("a1", "0", 1);
+      setCookie("a1", "0");
     }
 //  }
   //else{
@@ -31,11 +31,11 @@ function question2(){
   //if(tmp == "number"){
     if(answer == "123"){
       document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
-      setCookie("a2", "1", 1);
+      setCookie("a2", "1");
     }
     else {
       document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
-      setCookie("a2", "0", 1);
+      setCookie("a2", "0");
     }
 //  }
   //else{
@@ -49,11 +49,11 @@ function question3(){
   answer = answer.toLowerCase();
   if(answer == "gi"){
     document.getElementById("feedback").innerHTML = '<span style:"color: green">Correct! Hit Next Question to move on.</span>';
-    setCookie("a3", "1", 1);
+    setCookie("a3", "1");
   }
   else {
     document.getElementById("feedback").innerHTML = '<span style:"color: red">That is incorrect. Try again!</span>';
-    setCookie("a3", "0", 1);
+    setCookie("a3", "0");
   }
 }
 
