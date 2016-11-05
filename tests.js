@@ -62,7 +62,6 @@ function results(){
   var check2 = getCookie("a2");
   var check3 = getCookie("a3");
   var total = check1 + check2 + check3;
-  window.alert(check1);
   if(check1 == 1){
     document.getElementById("q1").innerHTML = '<p style:"color: green">Correct</p>';
   }
